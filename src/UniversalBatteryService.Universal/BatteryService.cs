@@ -1,7 +1,7 @@
 ﻿using System;
 using Windows.Devices.Power;
 
-namespace UniversalBatteryService.Universal
+namespace UniversalBatteryService
 {
     public class BatteryService : IBatteryService
     {
@@ -15,7 +15,7 @@ namespace UniversalBatteryService.Universal
 
             BatteryData data = new BatteryData();
             data.BatteryLife = report.BatteryLevelInPercentage();
-            data.BatteryLifeTime = report.EstimateTimeToCharge();
+            data.BatteryLifeTime = report.EstimateTimeToDischarge();
 
             switch (report.Status)
             {
