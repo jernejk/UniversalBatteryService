@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UniversalBatteryService", "UniversalBatteryService\UniversalBatteryService.shproj", "{7F04E49D-8AC1-4333-AE98-201B55B2402B}"
 EndProject
