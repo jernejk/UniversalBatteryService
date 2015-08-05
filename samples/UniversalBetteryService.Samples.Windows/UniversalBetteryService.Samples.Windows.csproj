@@ -122,6 +122,10 @@
       <Project>{50fc16b5-5c89-4713-af49-20731b52dd34}</Project>
       <Name>UniversalBatteryService.Windows</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\src\UniversalBatteryService\UniversalBatteryService.csproj">
+      <Project>{469835a7-0b42-475e-ba12-2a6df212a2ac}</Project>
+      <Name>UniversalBatteryService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\UniversalBetteryService.Samples.Shared\UniversalBetteryService.Samples.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">

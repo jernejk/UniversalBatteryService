@@ -99,6 +99,10 @@
       <Project>{60b97639-634e-4f3b-a808-8c49fa489dee}</Project>
       <Name>UniversalBatteryService.Net45</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\src\UniversalBatteryService\UniversalBatteryService.csproj">
+      <Project>{469835a7-0b42-475e-ba12-2a6df212a2ac}</Project>
+      <Name>UniversalBatteryService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

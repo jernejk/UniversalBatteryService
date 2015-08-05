@@ -135,6 +135,10 @@
       <Project>{7140ef73-1248-48ed-8164-277be745da26}</Project>
       <Name>UniversalBatteryService.Universal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\src\UniversalBatteryService\UniversalBatteryService.csproj">
+      <Project>{469835a7-0b42-475e-ba12-2a6df212a2ac}</Project>
+      <Name>UniversalBatteryService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

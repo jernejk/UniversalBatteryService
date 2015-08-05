@@ -1,6 +1,5 @@
 ﻿using System;
 using Windows.Phone.Devices.Power;
-using Windows.UI.Xaml;
 
 namespace UniversalBatteryService
 {
@@ -17,8 +16,7 @@ namespace UniversalBatteryService
             {
                 battery = Battery.GetDefault();
             }
-
-
+            
             BatteryData data = new BatteryData();
             data.BatteryLife = battery.RemainingChargePercent;
             TimeSpan dischargeTime = battery.RemainingDischargeTime;
@@ -30,9 +28,11 @@ namespace UniversalBatteryService
             }
             else
             {
+                // High discharge time means phone is charging.
                 data.BatteryState = BatteryState.Charging;
             }
 
+            // Notify only when values changes. GetCurrentState can be called manually.
             if (lastBatteryData == null || data.BatteryLife != lastBatteryData.BatteryLife || data.BatteryLifeTime != lastBatteryData.BatteryLifeTime || data.BatteryState != lastBatteryData.BatteryState)
             {
                 BatteryStateChanged?.Invoke(this, new BatteryStateChangedEventArgs(data));
