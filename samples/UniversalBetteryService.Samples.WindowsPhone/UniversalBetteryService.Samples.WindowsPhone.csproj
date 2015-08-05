@@ -21,7 +21,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\wp_bin_debug\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -99,6 +99,10 @@
     <ProjectReference Include="..\..\src\UniversalBatteryService.WindowsPhone\UniversalBatteryService.WindowsPhone.csproj">
       <Project>{5ca3d604-c02b-4fd4-886d-f89b4a915c89}</Project>
       <Name>UniversalBatteryService.WindowsPhone</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\UniversalBatteryService\UniversalBatteryService.csproj">
+      <Project>{469835a7-0b42-475e-ba12-2a6df212a2ac}</Project>
+      <Name>UniversalBatteryService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\UniversalBetteryService.Samples.Shared\UniversalBetteryService.Samples.Shared.projitems" Label="Shared" />

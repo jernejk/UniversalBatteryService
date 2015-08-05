@@ -118,7 +118,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Properties\UniversalBatteryService.Universal.rd.xml" />
   </ItemGroup>
-  <Import Project="..\UniversalBatteryService\UniversalBatteryService.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\UniversalBatteryService\UniversalBatteryService.csproj">
+      <Project>{469835a7-0b42-475e-ba12-2a6df212a2ac}</Project>
+      <Name>UniversalBatteryService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
